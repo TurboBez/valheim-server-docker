@@ -14,3 +14,9 @@ services:
       - .env
     restart: always
     stop_grace_period: 2m
+    deploy:
+      resources:
+        limits:
+          memory: 16G
+        reservations:
+          memory: 8G
